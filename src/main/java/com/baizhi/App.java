@@ -8,6 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan(value = "com.baizhi.dao")
 public class App {
     public static void main(String[] args) {
+        
+        
+        //update test
+        
         SpringApplication.run(App.class,args);
     }
 }
