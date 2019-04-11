@@ -1,0 +1,21 @@
+server:
+  port: 8085
+  context-path: /springboot_work
+
+#spring:
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:mysql://localhost:3306/baizhi
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: 123456
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: hr
+    password: hr
+mybatis:
+  mapper-locations: classpath:com/baizhi/dao/*Mapper.xml
+  type-aliases-package: com.baizhi.entity
